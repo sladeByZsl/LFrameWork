@@ -58,3 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+LFrameWork/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache
+LFrameWork/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
