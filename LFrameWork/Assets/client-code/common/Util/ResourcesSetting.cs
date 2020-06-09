@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using System.IO;
 
 
+
+public enum ELoaderType
+{
+    LoaderType_Local = 0, // 使用Local资源进行加载;
+    LoaderType_AssetBundle = 1, // 使用AssetBundle进行资源加载;
+    LoaderType_www = 2,
+}
+
+
 public enum BundleType
 {
     None = -1,
@@ -20,17 +29,26 @@ public enum BundleType
 
     Object = 9,
     Audio = 10,
-    Vedio = 11,
+    Video = 11,
 }
 
 
 public class ResourcesSetting
 {
     public const string BundleExtensions = ".ab";
+
+    public const string ScenePath = "Assets/Scenes/level_process/";
+    public const string SceneRoot_Low = "_res";
+    public const string SceneRoot_Medium = "_medium";
+    public const string SceneRoot_High = "_high";
+    public const string SceneRoot_Scene = "scene_root";
+
     public static string PrefabFxFolder = "Assets/Arts/effect/prefab";
-    public static string BundleFxFolder = "particle";
-
-
+    public static string PrefabSpineFolder = "Assets/Arts/spine/prefab";
+    public static string PrefabObjectFolder = "Assets/Arts/object/Prefab";
+    public static string PrefabCinemaFolder = "Assets/Arts/cinema";
+    public static string PrefabVideoFolder = "Assets/Arts/video";
+    public static string PrefabUIFolder = "Assets/Arts/ui/panel";
     public static string UICommonFolder = "Assets/Arts/ui/common";   // 静态图标，预先就规划好图集;
     public static string UIIconFolder = "Assets/Arts/ui/icon";     // 动态图标，加载后合并图集，比如物品图标;
     public static string UITextureFolder = "Assets/Arts/ui/texture";  // 动态图片，加载后不合并图集，比如小地图、半身像;
@@ -39,6 +57,37 @@ public class ResourcesSetting
     public static string UITextureFolder_NoneAlpha = "Assets/Arts/ui/texture/NoneAlpha";
     public static string UITextureFolder_Alpha = "Assets/Arts/ui/texture/Alpha";
     public static string UITextureFolder_Scene = "Assets/Arts/ui/texture/Scene";
+    public static string UISpineFolder = "Assets/Arts/ui/spine";
+    public static string UIParticleFolder = "Assets/Arts/ui/particle";
+    public static string AudioFolder = "Assets/Arts/audio";
+
+    public static string BundleFxFolder = "particle";
+    public static string BundleSpineFolder = "spine";
+    public static string BundleSceneFolder = "scene";
+    public static string BundleCinemaFolder = "cinema";
+    public static string BundleVedioFolder = "vedio";
+    public static string BundleUIPrefabFolder = "gui/panel";
+    public static string BundleUITextureFolder = "gui/texture";
+    public static string BundleUIParticleFolder = "gui/uiparticle";
+    public static string BundleUISpineFolder = "gui/uispine";
+    public static string BundleUIIconFolder = "gui/icon";
+    public static string BundleUIPrefabResFolder = "res/";
+    public static string BundleAudioFolder = "audio";
+    public static string BundleConfFolder = "conf";
+    public static string BundleBankFolder = "sounds";
+    public static string BundleConfPBFolder = "conf/pb";
+    public static string BundleBlockFolder = "block";
+    public static string BundleObjectFolder = "object";
+
+
+
+#if UNITY_EDITOR
+    public const string kResLoadMode = "ResLoadMode";
+    public static ELoaderType LoaderType = UnityEditor.EditorPrefs.GetBool(kResLoadMode, false) ? ELoaderType.LoaderType_Local : ELoaderType.LoaderType_AssetBundle;
+#else
+    public static ELoaderType LoaderType = ELoaderType.LoaderType_AssetBundle;
+#endif
+
 
 
 #if UNITY_ANDROID
