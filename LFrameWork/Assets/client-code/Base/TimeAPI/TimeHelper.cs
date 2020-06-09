@@ -9,12 +9,12 @@
     {
         public static DateTime ConvertTimeStampToTime(this double timeStamp)
         {
-            return TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(0x7b2, 1, 1)).AddSeconds(timeStamp);
+            return TimeZoneInfo.ConvertTime(new DateTime(0x7b2, 1, 1), TimeZoneInfo.Local);
         }
 
         public static double ConvertTimeToTimestamp(this DateTime time)
         {
-            TimeSpan span = (TimeSpan) (time - TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(0x7b2, 1, 1)));
+            TimeSpan span = (TimeSpan) (time - TimeZoneInfo.ConvertTime(new DateTime(0x7b2, 1, 1), TimeZoneInfo.Local));
             return span.TotalSeconds;
         }
 
