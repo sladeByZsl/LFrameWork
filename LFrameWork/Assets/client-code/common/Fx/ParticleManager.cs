@@ -29,7 +29,6 @@ namespace LFrameWork.Common
 
         public int FakeNum = 50;
 
-        private List<string> whiteList = new List<string>();
 
         protected Transform activeRootTran
         {
@@ -77,14 +76,9 @@ namespace LFrameWork.Common
 
         public void Awake()
         {
-            whiteList = new List<string>();
             
         }
-
-        public List<string> GetWhiteList()
-        {
-            return whiteList;
-        }
+       
 
         /// <summary>
         /// 将不用的特效还回缓存池;
@@ -148,10 +142,7 @@ namespace LFrameWork.Common
 
             for (int i = 0; i < parList.Count; i++)
             {
-                if (!whiteList.Contains(parList[i].m_ParticleKey))
-                {
-                    AddCache(parList[i]);
-                }
+                AddCache(parList[i]);
             }
         }
 

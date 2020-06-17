@@ -4,20 +4,107 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-public class BuildAssetBundle 
+public class BuildAssetBundle
 {
+    [MenuItem("LFrameWork/ResLoadMode", false, 200)]
+    static void CheckResLoadMode()
+    {
+        bool isToggled = !EditorPrefs.GetBool(ResourcesSetting.kResLoadMode, false);
+        EditorPrefs.SetBool(ResourcesSetting.kResLoadMode, isToggled);
+        ResourcesSetting.LoaderType = UnityEditor.EditorPrefs.GetBool(ResourcesSetting.kResLoadMode, false) ? ELoaderType.LoaderType_Local : ELoaderType.LoaderType_AssetBundle;
+    }
+
+    [MenuItem("LFrameWork/ResLoadMode", true)]
+    static bool ValidateSimulationMode()
+    {
+        bool isToggled = EditorPrefs.GetBool(ResourcesSetting.kResLoadMode, false);
+        Menu.SetChecked("LFrameWork/ResLoadMode", isToggled);
+        return true;
+    }
+
+
+
 #if UNITY_ANDROID
 	public static BuildTarget platform = BuildTarget.Android;
 #elif UNITY_IOS
 	public static BuildTarget platform = BuildTarget.iOS;
 #elif UNITY_STANDALONE_OSX
-	public static BuildTarget platform = BuildTarget.StandaloneOSX;
+    public static BuildTarget platform = BuildTarget.StandaloneOSX;
 #else
     public static BuildTarget platform = BuildTarget.StandaloneWindows;
 #endif
 
     [MenuItem("LFrameWork/BuildAll", false, 100)]
-    public static void MenuBuild()
+    public static void Build()
+    {
+
+        BuildBundle();
+
+        string outputPath = ResourcesSetting.PackBundlePath;
+        string abRoot = Path.Combine(outputPath, "../", AssetBundleBuilder.ASSET_BUNDLE);
+        string copyAbPath = Path.Combine(outputPath, "AssetBundle");
+        CopyAssetBundles(abRoot, copyAbPath, false);
+        /// createFileList
+        string root = Application.dataPath.ToLower().Replace("assets", ResourcesSetting.PackBundlePath);
+
+        var opts = BuildAssetBundleOptions.DeterministicAssetBundle
+           | BuildAssetBundleOptions.ChunkBasedCompression;
+        BuildBundleUtils.CreateFileList(root, opts, platform);
+    }
+
+    public static bool CopyAssetBundles(string abRoot, string copyPath, bool encypt)
+    {
+        Debug.Log("*********CopyAssetBundles Start*********");
+        Debug.Log("*********abRoot = " + abRoot);
+        Debug.Log("*********copyPath = " + copyPath);
+
+        if (Directory.Exists(copyPath))
+        {
+            Directory.Delete(copyPath, true);
+        }
+        Directory.CreateDirectory(copyPath);
+
+        DirectoryInfo abRootInfo = new DirectoryInfo(abRoot);
+        DirectoryInfo copyPathInfo = new DirectoryInfo(copyPath);
+
+        FileInfo[] fileInfos = abRootInfo.GetFiles("*.*", SearchOption.AllDirectories);
+
+        for (int i = 0; i < fileInfos.Length; ++i)
+        {
+            try
+            {
+                FileInfo fileInfo = fileInfos[i];
+                string filePath = fileInfo.FullName;
+                if (fileInfo.Extension == ".manifest" && fileInfo.Name != abRootInfo.Name + ".manifest")
+                {
+                    // 只拷贝主manifst其他的不拷贝
+                    continue;
+                }
+                else
+                {
+                    string copyFile = filePath.Replace(abRootInfo.FullName, copyPathInfo.FullName);
+                    string copyDir = fileInfo.Directory.FullName.Replace(abRootInfo.FullName, copyPathInfo.FullName);
+                    if (!Directory.Exists(copyDir))
+                    {
+                        Directory.CreateDirectory(copyDir);
+                    }
+                    fileInfo.CopyTo(copyFile, true);
+
+                   
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogError(ex.ToString());
+            }
+        }
+
+        Debug.Log("*********CopyAssetBundles End*********");
+
+        return true;
+    }
+
+    public static void BuildBundle()
     {
         System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
         sw.Start();
