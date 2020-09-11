@@ -189,7 +189,7 @@ public class DataListInfo
 	{
 		bool find = false;
 #if UNITY_ANDROID && !UNITY_EDITOR
-		if (PluginTool.instance.AssetFileExist(dataPath))
+
 #elif UNITY_IOS && !UNITY_EDITOR
 		if (System.IO.File.Exists(string.Format("{0}/Raw/{1}", Application.dataPath, dataPath)))
 #endif

@@ -1,0 +1,354 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da50b3c7419da146b770f1ad320e662, type: 3}
+  m_Name: Rules
+  m_EditorClassIdentifier: 
+  searchPatternAsset: '*.asset'
+  searchPatternController: '*.controller'
+  searchPatternDir: '*'
+  searchPatternMaterial: '*.mat'
+  searchPatternPng: '*.png'
+  searchPatternPrefab: '*.prefab'
+  searchPatternScene: '*.unity'
+  searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
+  version: 20
+  scenesInBuild:
+  - {fileID: 102900000, guid: 8a3a42c221e2e45e988ee2601672c524, type: 3}
+  - {fileID: 102900000, guid: 0d87bac8da09aa244ab051390d4027ab, type: 3}
+  rules:
+  - searchPath: Assets/Arts/effect/prefab
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Arts/Prefab
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Arts/ui/common
+    searchPattern: '*'
+    nameBy: 2
+    assetBundleName: 
+  - searchPath: Assets/Arts/ui/panel
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Arts/ui/texture
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Scenes/level_process
+    searchPattern: '*.unity'
+    nameBy: 1
+    assetBundleName: 
+  ruleAssets:
+  - bundle: assets/arts/prefab/canvas.prefab.unity3d
+    path: Assets/Arts/Prefab/Canvas.prefab
+  - bundle: assets/arts/prefab/guicamera.prefab.unity3d
+    path: Assets/Arts/Prefab/GuiCamera.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_boss_quidola_skill_s_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_boss_quidola_skill_s_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_blue2_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_blue2_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_blue_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_blue_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_green2_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_green2_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_green_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_green_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_purple2_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_purple2_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_purple_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_purple_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_red2_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_red2_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_red_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_red_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_yellow2_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_yellow2_ro.prefab
+  - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_yellow_ro.prefab.unity3d
+    path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_yellow_ro.prefab
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/others_icon_bag_yellowstar.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/others_icon_common_yellowstar.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/others_title_bag_headline.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/sliderbk.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_bar_bag_orangebar1_sli_w.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_bar_bag_orangebar2_sli_w.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_btn_bag_common_down1.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_btn_bag_common_down2.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_btn_bag_common_down3.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_btn_bag_common_lock.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_btn_bag_shut.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_panel_bag_board_sli.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_panel_bag_ditiao_sli.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/spr_panel_common_downdark_sli_w.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/tex_bag_empty_back.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/tex_bag_graylight.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/tex_bag_headline_backitems.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/tex_bag_poparrow.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/tex_bag_purple_bg.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/tex_bag_wood_down.png
+  - bundle: assets/arts/ui/common/bag.unity3d
+    path: Assets/Arts/ui/common/bag/tex_bag_wood_up.png
+  - bundle: assets/arts/ui/common/test.unity3d
+    path: Assets/Arts/ui/common/test/heihei.png
+  - bundle: assets/arts/ui/panel/startpanel.prefab.unity3d
+    path: Assets/Arts/ui/panel/StartPanel.prefab
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_fa_zhen_bing_03.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_fa_zhen_bing_03.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_huo_01.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_huo_01.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_jian_bian_04.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_jian_bian_04.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_jian_bian_09.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_jian_bian_09.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_jiao_huan_green_4.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_jiao_huan_green_4.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_lie_hen_02.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_lie_hen_02.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_lie_hen_03.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_lie_hen_03.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_mask_06_2.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_mask_06_2.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_mask_07.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_mask_07.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_noise_01_2.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_noise_01_2.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_trail_02.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_trail_02.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_ui_hui_he_attack.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_ui_hui_he_attack.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_xuan_wo_05.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_xuan_wo_05.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_01_xuan_wo_06.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_01_xuan_wo_06.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_02_xin_05.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_02_xin_05.png
+  - bundle: assets/arts/ui/texture/effect/fx_tex_10_daoguang_01.png.unity3d
+    path: Assets/Arts/ui/texture/Effect/fx_tex_10_daoguang_01.png
+  - bundle: assets/arts/ui/texture/heroicon/black.png.unity3d
+    path: Assets/Arts/ui/texture/HeroIcon/black.png
+  - bundle: assets/arts/ui/texture/heroicon/others_icon_battle_aldin.png.unity3d
+    path: Assets/Arts/ui/texture/HeroIcon/others_icon_battle_aldin.png
+  - bundle: assets/arts/ui/texture/heroicon/others_icon_battle_amia.png.unity3d
+    path: Assets/Arts/ui/texture/HeroIcon/others_icon_battle_amia.png
+  - bundle: assets/arts/ui/texture/heroicon/others_icon_battle_archy.png.unity3d
+    path: Assets/Arts/ui/texture/HeroIcon/others_icon_battle_archy.png
+  - bundle: assets/arts/ui/texture/heroicon/others_icon_battle_arthur_true.png.unity3d
+    path: Assets/Arts/ui/texture/HeroIcon/others_icon_battle_arthur_true.png
+  - bundle: assets/arts/ui/texture/heroicon/others_icon_battle_arya.png.unity3d
+    path: Assets/Arts/ui/texture/HeroIcon/others_icon_battle_arya.png
+  - bundle: assets/arts/ui/texture/heroicon/spr_panel_battle_color_mask.png.unity3d
+    path: Assets/Arts/ui/texture/HeroIcon/spr_panel_battle_color_mask.png
+  - bundle: assets/arts/ui/texture/heroicon/tex_arena_headback1.png.unity3d
+    path: Assets/Arts/ui/texture/HeroIcon/tex_arena_headback1.png
+  - bundle: assets/scenes/level_process/gamescene.unity.unity3d
+    path: Assets/Scenes/level_process/GameScene.unity
+  - bundle: assets/scenes/level_process/samplescene.unity.unity3d
+    path: Assets/Scenes/level_process/SampleScene.unity
+  ruleBundles:
+  - name: assets/arts/effect/prefab/fx_01_boss_quidola_skill_s_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_boss_quidola_skill_s_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_blue2_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_blue2_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_blue_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_blue_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_green2_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_green2_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_green_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_green_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_purple2_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_purple2_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_purple_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_purple_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_red2_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_red2_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_red_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_red_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_yellow2_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_yellow2_ro.prefab
+  - name: assets/arts/effect/prefab/fx_01_enemy_xu_li_yellow_ro.prefab.unity3d
+    assets:
+    - Assets/Arts/effect/prefab/fx_01_enemy_xu_li_yellow_ro.prefab
+  - name: assets/arts/prefab/canvas.prefab.unity3d
+    assets:
+    - Assets/Arts/Prefab/Canvas.prefab
+  - name: assets/arts/prefab/guicamera.prefab.unity3d
+    assets:
+    - Assets/Arts/Prefab/GuiCamera.prefab
+  - name: assets/arts/ui/common/bag.unity3d
+    assets:
+    - Assets/Arts/ui/common/bag/others_icon_bag_yellowstar.png
+    - Assets/Arts/ui/common/bag/others_icon_common_yellowstar.png
+    - Assets/Arts/ui/common/bag/others_title_bag_headline.png
+    - Assets/Arts/ui/common/bag/sliderbk.png
+    - Assets/Arts/ui/common/bag/spr_bar_bag_orangebar1_sli_w.png
+    - Assets/Arts/ui/common/bag/spr_bar_bag_orangebar2_sli_w.png
+    - Assets/Arts/ui/common/bag/spr_btn_bag_common_down1.png
+    - Assets/Arts/ui/common/bag/spr_btn_bag_common_down2.png
+    - Assets/Arts/ui/common/bag/spr_btn_bag_common_down3.png
+    - Assets/Arts/ui/common/bag/spr_btn_bag_common_lock.png
+    - Assets/Arts/ui/common/bag/spr_btn_bag_shut.png
+    - Assets/Arts/ui/common/bag/spr_panel_bag_board_sli.png
+    - Assets/Arts/ui/common/bag/spr_panel_bag_ditiao_sli.png
+    - Assets/Arts/ui/common/bag/spr_panel_common_downdark_sli_w.png
+    - Assets/Arts/ui/common/bag/tex_bag_empty_back.png
+    - Assets/Arts/ui/common/bag/tex_bag_graylight.png
+    - Assets/Arts/ui/common/bag/tex_bag_headline_backitems.png
+    - Assets/Arts/ui/common/bag/tex_bag_poparrow.png
+    - Assets/Arts/ui/common/bag/tex_bag_purple_bg.png
+    - Assets/Arts/ui/common/bag/tex_bag_wood_down.png
+    - Assets/Arts/ui/common/bag/tex_bag_wood_up.png
+  - name: assets/arts/ui/common/test.unity3d
+    assets:
+    - Assets/Arts/ui/common/test/heihei.png
+  - name: assets/arts/ui/panel/startpanel.prefab.unity3d
+    assets:
+    - Assets/Arts/ui/panel/StartPanel.prefab
+  - name: assets/arts/ui/texture/effect/fx_tex_01_fa_zhen_bing_03.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_fa_zhen_bing_03.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_huo_01.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_huo_01.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_jian_bian_04.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_jian_bian_04.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_jian_bian_09.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_jian_bian_09.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_jiao_huan_green_4.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_jiao_huan_green_4.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_lie_hen_02.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_lie_hen_02.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_lie_hen_03.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_lie_hen_03.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_mask_06_2.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_mask_06_2.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_mask_07.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_mask_07.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_noise_01_2.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_noise_01_2.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_trail_02.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_trail_02.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_ui_hui_he_attack.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_ui_hui_he_attack.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_xuan_wo_05.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_xuan_wo_05.png
+  - name: assets/arts/ui/texture/effect/fx_tex_01_xuan_wo_06.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_01_xuan_wo_06.png
+  - name: assets/arts/ui/texture/effect/fx_tex_02_xin_05.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_02_xin_05.png
+  - name: assets/arts/ui/texture/effect/fx_tex_10_daoguang_01.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/Effect/fx_tex_10_daoguang_01.png
+  - name: assets/arts/ui/texture/heroicon/black.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/HeroIcon/black.png
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_aldin.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/HeroIcon/others_icon_battle_aldin.png
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_amia.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/HeroIcon/others_icon_battle_amia.png
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_archy.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/HeroIcon/others_icon_battle_archy.png
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_arthur_true.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/HeroIcon/others_icon_battle_arthur_true.png
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_arya.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/HeroIcon/others_icon_battle_arya.png
+  - name: assets/arts/ui/texture/heroicon/spr_panel_battle_color_mask.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/HeroIcon/spr_panel_battle_color_mask.png
+  - name: assets/arts/ui/texture/heroicon/tex_arena_headback1.png.unity3d
+    assets:
+    - Assets/Arts/ui/texture/HeroIcon/tex_arena_headback1.png
+  - name: assets/scenes/level_process/gamescene.unity.unity3d
+    assets:
+    - Assets/Scenes/level_process/GameScene.unity
+  - name: assets/scenes/level_process/samplescene.unity.unity3d
+    assets:
+    - Assets/Scenes/level_process/SampleScene.unity
+  - name: shaders.unity3d
+    assets:
+    - Assets/Shaders/shader/FX/ParticleAddNoFog.shader
+    - Assets/Shaders/shader/FX/fx_shader_01_rongJie_add.shader
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_xian_10.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_xian_10.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_glow_01.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_glow_01.mat
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_xian_19.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_xian_19.png
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_noise_12.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_noise_12.png
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_xian_01.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_xian_01.mat
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_xian_20.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_xian_20.png
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_huan_12.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_huan_12.mat
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_huan_12.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_huan_12.png

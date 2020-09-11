@@ -31,6 +31,15 @@ public static class Util
     }
 
     /// <summary>
+    /// 触发崩溃
+    /// </summary>
+    /// <param name="category"></param>
+    public static void TriggerCrash(UnityEngine.Diagnostics.ForcedCrashCategory category)
+    {
+        UnityEngine.Diagnostics.Utils.ForceCrash(category);
+    }
+
+    /// <summary>
     /// 获取一个List数组里所有元素的toString字符串
     /// </summary>
     /// <typeparam name="T"></typeparam>

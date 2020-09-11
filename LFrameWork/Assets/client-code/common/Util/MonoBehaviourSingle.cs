@@ -69,14 +69,13 @@ namespace LFrameWork.Common.Utility
 			Destroy(s_instance.gameObject);
 			s_instance = null;
 		}
-		protected virtual void OnDestroy()
+		private void OnDestroy()
 		{
-
-
-		}
-		protected virtual void OnInit() { }
+            OnClear();
+        }
+        public virtual void OnInit() { }
 		public virtual void OnUpdate(float deltaTime) { }
 		public virtual void OnReConnect() { }
-		public virtual void Clear() { }
+		public virtual void OnClear() { }
 	}
 }

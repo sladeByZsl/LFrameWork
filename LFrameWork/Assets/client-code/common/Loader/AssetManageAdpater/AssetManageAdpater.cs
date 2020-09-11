@@ -12,13 +12,13 @@ namespace LFrameWork.Common.Resource
     {
         public static readonly string STR_ASSET_BUNDLE = "AssetBundle";
 
-        protected override void OnDestroy()
+        public override void OnClear()
         {
             Release();
             AssetManager.Release();
         }
 
-        protected override void OnInit()
+        public override void OnInit()
         {
             AssetManager.Init();
             var assetMgr = AssetManager.GetInstance();
