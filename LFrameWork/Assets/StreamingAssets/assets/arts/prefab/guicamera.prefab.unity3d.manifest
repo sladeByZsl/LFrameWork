@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2147120492
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8ab6502ab772f75de60d9c6ed77a1688
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cdc308ffb735ba5211179dcf89fd087c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/Prefab/GuiCamera.prefab
+Dependencies: []

@@ -45,27 +45,7 @@ namespace LFrameWork.Common
             }
         }
 
-#if !UNITY_EDITOR
-        protected override void OnInit()
-        {
-            //throw new NotImplementedException();
-        }
 
-        public override void OnUpdate(float deltaTime)
-        {
-            //throw new NotImplementedException();
-        }
-
-        public override void OnReConnect()
-        {
-            //throw new NotImplementedException();
-        }
-
-        public override void Clear()
-        {
-            //throw new NotImplementedException();
-        }
-#endif
         protected override void OnApplicationQuit()
         {
             //Debug.LogError("particle clearall");

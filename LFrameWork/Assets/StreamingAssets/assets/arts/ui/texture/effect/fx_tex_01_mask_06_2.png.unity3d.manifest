@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1534348288
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 988f2729dc905f93bf7ec6480b5e61b6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/ui/texture/Effect/fx_tex_01_mask_06_2.png
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2687186296
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7a4998ef7930ca80fb0c7ddb27153798
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/ui/texture/Effect/fx_tex_01_fa_zhen_bing_03.png
+Dependencies: []

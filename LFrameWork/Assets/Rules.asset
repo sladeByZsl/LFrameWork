@@ -20,7 +20,7 @@ MonoBehaviour:
   searchPatternPrefab: '*.prefab'
   searchPatternScene: '*.unity'
   searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
-  version: 20
+  version: 34
   scenesInBuild:
   - {fileID: 102900000, guid: 8a3a42c221e2e45e988ee2601672c524, type: 3}
   - {fileID: 102900000, guid: 0d87bac8da09aa244ab051390d4027ab, type: 3}
@@ -45,8 +45,12 @@ MonoBehaviour:
     searchPattern: '*.png'
     nameBy: 1
     assetBundleName: 
-  - searchPath: Assets/Scenes/level_process
-    searchPattern: '*.unity'
+  - searchPath: Assets/Arts/effect/res/material
+    searchPattern: '*.mat'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Arts/effect/res/texture
+    searchPattern: '*.png'
     nameBy: 1
     assetBundleName: 
   ruleAssets:
@@ -76,6 +80,42 @@ MonoBehaviour:
     path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_yellow2_ro.prefab
   - bundle: assets/arts/effect/prefab/fx_01_enemy_xu_li_yellow_ro.prefab.unity3d
     path: Assets/Arts/effect/prefab/fx_01_enemy_xu_li_yellow_ro.prefab
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_glow_01.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_glow_01.mat
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_huan_12.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_huan_12.mat
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_huo_01.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_huo_01.mat
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_blue_01.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_blue_01.mat
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_green_01.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_green_01.mat
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_purple_01.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_purple_01.mat
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_red_01.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_red_01.mat
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_yellow_01.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_yellow_01.mat
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_xian_01.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_xian_01.mat
+  - bundle: assets/arts/effect/res/material/mat_01/fx_mat_01_xian_10.mat.unity3d
+    path: Assets/Arts/effect/res/material/mat_01/fx_mat_01_xian_10.mat
+  - bundle: assets/arts/effect/res/texture/512/fx_tex_01_512_big_sd_yellow.png.unity3d
+    path: Assets/Arts/effect/res/texture/512/fx_tex_01_512_big_sd_yellow.png
+  - bundle: assets/arts/effect/res/texture/special/fx_tex_01_ui_chuan_song_men.png.unity3d
+    path: Assets/Arts/effect/res/texture/special/fx_tex_01_ui_chuan_song_men.png
+  - bundle: assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.unity3d
+    path: Assets/Arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png
+  - bundle: assets/arts/effect/res/texture/tex_01/fx_tex_01_huan_12.png.unity3d
+    path: Assets/Arts/effect/res/texture/tex_01/fx_tex_01_huan_12.png
+  - bundle: assets/arts/effect/res/texture/tex_01/fx_tex_01_huo_01.png.unity3d
+    path: Assets/Arts/effect/res/texture/tex_01/fx_tex_01_huo_01.png
+  - bundle: assets/arts/effect/res/texture/tex_01/fx_tex_01_noise_12.png.unity3d
+    path: Assets/Arts/effect/res/texture/tex_01/fx_tex_01_noise_12.png
+  - bundle: assets/arts/effect/res/texture/tex_01/fx_tex_01_xian_19.png.unity3d
+    path: Assets/Arts/effect/res/texture/tex_01/fx_tex_01_xian_19.png
+  - bundle: assets/arts/effect/res/texture/tex_01/fx_tex_01_xian_20.png.unity3d
+    path: Assets/Arts/effect/res/texture/tex_01/fx_tex_01_xian_20.png
   - bundle: assets/arts/ui/common/bag.unity3d
     path: Assets/Arts/ui/common/bag/others_icon_bag_yellowstar.png
   - bundle: assets/arts/ui/common/bag.unity3d
@@ -170,10 +210,6 @@ MonoBehaviour:
     path: Assets/Arts/ui/texture/HeroIcon/spr_panel_battle_color_mask.png
   - bundle: assets/arts/ui/texture/heroicon/tex_arena_headback1.png.unity3d
     path: Assets/Arts/ui/texture/HeroIcon/tex_arena_headback1.png
-  - bundle: assets/scenes/level_process/gamescene.unity.unity3d
-    path: Assets/Scenes/level_process/GameScene.unity
-  - bundle: assets/scenes/level_process/samplescene.unity.unity3d
-    path: Assets/Scenes/level_process/SampleScene.unity
   ruleBundles:
   - name: assets/arts/effect/prefab/fx_01_boss_quidola_skill_s_ro.prefab.unity3d
     assets:
@@ -315,40 +351,61 @@ MonoBehaviour:
   - name: assets/arts/ui/texture/heroicon/tex_arena_headback1.png.unity3d
     assets:
     - Assets/Arts/ui/texture/HeroIcon/tex_arena_headback1.png
-  - name: assets/scenes/level_process/gamescene.unity.unity3d
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_glow_01.mat.unity3d
     assets:
-    - Assets/Scenes/level_process/GameScene.unity
-  - name: assets/scenes/level_process/samplescene.unity.unity3d
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_glow_01.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_huan_12.mat.unity3d
     assets:
-    - Assets/Scenes/level_process/SampleScene.unity
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_huan_12.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_huo_01.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_huo_01.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_blue_01.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_blue_01.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_green_01.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_green_01.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_purple_01.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_purple_01.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_red_01.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_red_01.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_qi_liu_yellow_01.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_yellow_01.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_xian_01.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_xian_01.mat
+  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_xian_10.mat.unity3d
+    assets:
+    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_xian_10.mat
+  - name: assets/arts/effect/res/texture/512/fx_tex_01_512_big_sd_yellow.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/512/fx_tex_01_512_big_sd_yellow.png
+  - name: assets/arts/effect/res/texture/special/fx_tex_01_ui_chuan_song_men.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/special/fx_tex_01_ui_chuan_song_men.png
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_huan_12.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_huan_12.png
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_huo_01.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_huo_01.png
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_noise_12.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_noise_12.png
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_xian_19.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_xian_19.png
+  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_xian_20.png.unity3d
+    assets:
+    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_xian_20.png
   - name: shaders.unity3d
     assets:
     - Assets/Shaders/shader/FX/ParticleAddNoFog.shader
     - Assets/Shaders/shader/FX/fx_shader_01_rongJie_add.shader
-  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.unity3d
-    assets:
-    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png
-  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_xian_10.mat.unity3d
-    assets:
-    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_xian_10.mat
-  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_glow_01.mat.unity3d
-    assets:
-    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_glow_01.mat
-  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_xian_19.png.unity3d
-    assets:
-    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_xian_19.png
-  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_noise_12.png.unity3d
-    assets:
-    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_noise_12.png
-  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_xian_01.mat.unity3d
-    assets:
-    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_xian_01.mat
-  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_xian_20.png.unity3d
-    assets:
-    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_xian_20.png
-  - name: assets/arts/effect/res/material/mat_01/fx_mat_01_huan_12.mat.unity3d
-    assets:
-    - Assets/Arts/effect/res/material/mat_01/fx_mat_01_huan_12.mat
-  - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_huan_12.png.unity3d
-    assets:
-    - Assets/Arts/effect/res/texture/tex_01/fx_tex_01_huan_12.png

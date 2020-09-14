@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 1586621096
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d670281af243c8de5d17c68f80d2a502
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 04d16dcb8d733dc10039c74f1f59b6c6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 210
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/effect/prefab/fx_01_boss_quidola_skill_s_ro.prefab
+Dependencies:
+- D:/zsl/LFrameWork/LFrameWork/DLC/Android/assets/arts/effect/res/material/mat_01/fx_mat_01_huo_01.mat.unity3d

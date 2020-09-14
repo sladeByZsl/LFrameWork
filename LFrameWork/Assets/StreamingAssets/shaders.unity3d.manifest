@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3506345662
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4f883522cb533c2bee50dad7b981302f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7e9ee104d6bb707fb2602b751e6f78b1
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Shaders/shader/FX/fx_shader_01_rongJie_add.shader
+- Assets/Shaders/shader/FX/ParticleAddNoFog.shader
+Dependencies: []

@@ -144,12 +144,7 @@ namespace libx
             var builds = new List<AssetBundleBuild>();
             foreach (var bundle in ruleBundles)
             {
-                Debug.LogError("***********");
                 List<string> strList = new List<string>(bundle.assets);
-                Debug.LogError("asset:"+ Util.GetListObjectString(strList));
-                Debug.LogError("name:" + bundle.name);
-                Debug.LogError("@@@@@@@@@@@@@");
-
                 builds.Add(new AssetBundleBuild
                 {
                     assetNames = bundle.assets,

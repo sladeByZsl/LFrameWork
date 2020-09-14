@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 1750324814
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dde806a0ba23fc5c591a297cb5036f48
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fe397485c3cec1106b49e9ff95e8f8a2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/effect/res/material/mat_01/fx_mat_01_qi_liu_purple_01.mat
+Dependencies:
+- D:/zsl/LFrameWork/LFrameWork/DLC/Android/assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.unity3d
+- D:/zsl/LFrameWork/LFrameWork/DLC/Android/assets/arts/effect/res/texture/tex_01/fx_tex_01_noise_12.png.unity3d
+- D:/zsl/LFrameWork/LFrameWork/DLC/Android/shaders.unity3d

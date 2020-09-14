@@ -60,3 +60,8 @@ crashlytics-build.properties
 
 LFrameWork/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache
 LFrameWork/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/LFrameWork/DLC/Android
+/LFrameWork/Library
+/LFrameWork/obj/Debug
+/LFrameWork/Temp
+/LFrameWork/Build/windows

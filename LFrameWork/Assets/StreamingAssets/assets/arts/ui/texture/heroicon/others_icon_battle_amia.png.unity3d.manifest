@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 3145909394
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b4dee4e72fff4e47671b3f96d2a517aa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/ui/texture/HeroIcon/others_icon_battle_amia.png
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2749009645
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8c5fdf5d435dd92140595c606aec4fff
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/ui/texture/Effect/fx_tex_01_xuan_wo_05.png
+Dependencies: []

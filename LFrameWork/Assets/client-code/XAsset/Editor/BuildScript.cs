@@ -24,6 +24,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+using LFrameWork.Base.FileAPI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -64,21 +65,23 @@ namespace libx
 
 		public static void CopyAssetBundlesTo (string path)
 		{ 
-			var files = new[] {
-				Versions.Dataname,
-				Versions.Filename,
-			};  
+			//var files = new[] {
+			//	Versions.Dataname,
+			//	Versions.Filename,
+			//};  
 			if (!Directory.Exists (path)) {
 				Directory.CreateDirectory (path);
-			} 
-			foreach (var item in files) {
-				var src = outputPath + "/" + item;
-				var dest = Application.streamingAssetsPath + "/" + item;
-				if (File.Exists (src)) {
-					File.Copy (src, dest, true);
-				}
 			}
-		}
+            DirFileHelper.CopyFolder(Environment.CurrentDirectory+ Path.DirectorySeparatorChar + outputPath, path);
+            AssetDatabase.Refresh();
+            //foreach (var item in files) {
+            //	var src = outputPath + "/" + item;
+            //	var dest = Application.streamingAssetsPath + "/" + item;
+            //	if (File.Exists (src)) {
+            //		File.Copy (src, dest, true);
+            //	}
+            //}
+        }
 
 		public static string GetPlatformName ()
 		{
@@ -185,7 +188,7 @@ namespace libx
 			if (assetBundleManifest == null) {
 				return;
 			}
-            File.Copy(outputPath + "/" + targetPlatform.ToString() + ".manifest", outputPath + "/" + targetPlatform.ToString() + "2.manifest",true);
+            //File.Copy(outputPath + "/" + targetPlatform.ToString() + ".manifest", outputPath + "/" + targetPlatform.ToString() + "2.manifest",true);
 
             var manifest = GetManifest();
             var dirs = new List<string>();

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 741290956
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a9d9df184e70bc4e829bd370daae235d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/ui/texture/Effect/fx_tex_01_lie_hen_03.png
+Dependencies: []

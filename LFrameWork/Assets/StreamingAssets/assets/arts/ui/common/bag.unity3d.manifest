@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2313573598
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d70bb491842386bce3d7858603ac2969
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/ui/common/bag/tex_bag_empty_back.png
+- Assets/Arts/ui/common/bag/tex_bag_wood_down.png
+- Assets/Arts/ui/common/bag/sliderbk.png
+- Assets/Arts/ui/common/bag/spr_btn_bag_common_down3.png
+- Assets/Arts/ui/common/bag/spr_panel_bag_ditiao_sli.png
+- Assets/Arts/ui/common/bag/spr_panel_common_downdark_sli_w.png
+- Assets/Arts/ui/common/bag/others_title_bag_headline.png
+- Assets/Arts/ui/common/bag/spr_bar_bag_orangebar2_sli_w.png
+- Assets/Arts/ui/common/bag/tex_bag_wood_up.png
+- Assets/Arts/ui/common/bag/spr_bar_bag_orangebar1_sli_w.png
+- Assets/Arts/ui/common/bag/others_icon_common_yellowstar.png
+- Assets/Arts/ui/common/bag/spr_btn_bag_common_down1.png
+- Assets/Arts/ui/common/bag/tex_bag_poparrow.png
+- Assets/Arts/ui/common/bag/tex_bag_graylight.png
+- Assets/Arts/ui/common/bag/tex_bag_headline_backitems.png
+- Assets/Arts/ui/common/bag/spr_btn_bag_shut.png
+- Assets/Arts/ui/common/bag/spr_btn_bag_common_lock.png
+- Assets/Arts/ui/common/bag/others_icon_bag_yellowstar.png
+- Assets/Arts/ui/common/bag/spr_btn_bag_common_down2.png
+- Assets/Arts/ui/common/bag/tex_bag_purple_bg.png
+- Assets/Arts/ui/common/bag/spr_panel_bag_board_sli.png
+Dependencies: []

@@ -174,4 +174,33 @@ public static class Util
         }
         return crcValue;
     }//ComputeCRC32
+
+    /// <summary>
+    /// Swap two objects.
+    /// </summary>
+    public static void Swap<T>(ref T lhs, ref T rhs)
+    {
+        var temp = lhs;
+        lhs = rhs;
+        rhs = temp;
+    }
+
+    /// <summary>
+    /// Destroy an unity object.
+    /// </summary>
+    public static void Destroy(UnityEngine.Object obj)
+    {
+#if UNITY_EDITOR
+        if (Application.isPlaying)
+        {
+            UnityEngine.Object.Destroy(obj);
+        }
+        else
+        {
+            UnityEngine.Object.DestroyImmediate(obj);
+        }
+#else
+         UnityEngine.Object.Destroy(obj);
+#endif
+    }
 }

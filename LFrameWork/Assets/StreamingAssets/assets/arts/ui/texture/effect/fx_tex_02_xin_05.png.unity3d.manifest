@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3657158352
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3c54b342bc3fb3eee659cfba0dbef556
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/ui/texture/Effect/fx_tex_02_xin_05.png
+Dependencies: []

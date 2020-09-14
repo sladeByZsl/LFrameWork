@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 1209086537
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ad18927296eec1846468179ee95c6683
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6a6c6d41d3b4b9856b897225f9eb2399
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/effect/prefab/fx_01_enemy_xu_li_purple_ro.prefab
+Dependencies:
+- D:/zsl/LFrameWork/LFrameWork/DLC/Android/assets/arts/effect/res/material/mat_01/fx_mat_01_glow_01.mat.unity3d
+- D:/zsl/LFrameWork/LFrameWork/DLC/Android/assets/arts/effect/res/material/mat_01/fx_mat_01_huan_12.mat.unity3d
+- D:/zsl/LFrameWork/LFrameWork/DLC/Android/assets/arts/effect/res/material/mat_01/fx_mat_01_xian_01.mat.unity3d
+- D:/zsl/LFrameWork/LFrameWork/DLC/Android/assets/arts/effect/res/material/mat_01/fx_mat_01_xian_10.mat.unity3d

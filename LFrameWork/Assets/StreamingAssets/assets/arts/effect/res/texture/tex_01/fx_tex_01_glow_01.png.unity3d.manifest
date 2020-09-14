@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 805860025
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 278d098fae113025f1faa30de9b8d369
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png
+Dependencies: []

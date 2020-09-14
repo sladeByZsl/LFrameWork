@@ -82,6 +82,7 @@ public class PanelManager : MonoBehaviourSingle<PanelManager>
                     go.transform.localPosition = Vector3.zero;
                     go.transform.localScale = Vector3.one;
                     request.Require(go);
+                    request.Retain();
                     request.Release();
 
                     panelInfo[panelName] = go;

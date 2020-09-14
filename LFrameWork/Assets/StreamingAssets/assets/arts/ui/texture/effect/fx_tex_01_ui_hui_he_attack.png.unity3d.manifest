@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2130832986
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 402a2dbd36b021f7689b2b21d04c83d8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/ui/texture/Effect/fx_tex_01_ui_hui_he_attack.png
+Dependencies: []

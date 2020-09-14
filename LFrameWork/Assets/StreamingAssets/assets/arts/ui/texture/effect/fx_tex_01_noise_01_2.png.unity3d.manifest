@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2604970674
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: aec91d5833d3a581f305c5df72d85a1a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/ui/texture/Effect/fx_tex_01_noise_01_2.png
+Dependencies: []

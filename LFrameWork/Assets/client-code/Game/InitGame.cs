@@ -11,6 +11,8 @@ public class InitGame : MonoBehaviour
     public Transform root;
     ParticleInstance particle;
 
+    List<MyParticleInstance> particleInstanceList;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +46,19 @@ public class InitGame : MonoBehaviour
 
     private void Init()
     {
-      
+        GameObjectPoolManager.GetInstance().Init();
+        MyParticleManager.GetInstance().Init();
+        particleInstanceList = new List<MyParticleInstance>();
+
+        //Assets.LoadAssetAsync("shaders", typeof(UnityEngine.Object)).completed += delegate (AssetRequest request)
+        //{
+        //    if (!string.IsNullOrEmpty(request.error))
+        //    {
+        //        Debug.LogError(request.error);
+        //        return;
+        //    }
+        //    request.Retain();
+        //};
         //var assetPath = "Assets/Arts/ui/panel/StartPanel.prefab";
         //Assets.LoadAssetAsync(assetPath, typeof(UnityEngine.Object)).completed += delegate (AssetRequest request)
         //{
@@ -77,7 +91,12 @@ public class InitGame : MonoBehaviour
     {
         if (GUI.Button(new Rect(0,0,100,100),"add particle"))
         {
-            PanelManager.GetInstance().ShowPanel("StartPanel", true, () => { Debug.LogError("嘿嘿"); });
+            MyParticleInstance particleInstance=MyParticleManager.GetInstance().GetParticleInstance("fx_01_boss_quidola_skill_s_ro", () => {
+                Debug.LogError("load ok");
+            });
+            //PanelManager.GetInstance().ShowPanel("StartPanel", true, () => { Debug.LogError("嘿嘿"); });
+            particleInstanceList.Add(particleInstance);
+
             //AssetBundleManifest manifest;
             //string rootPath = "/Users/slade_zhou/Documents/MyProject/LFrameWork/LFrameWork/DataMAC/DataMAC/AssetBundle/AssetBundle";
             //AssetBundle ab = AssetBundle.LoadFromFile(rootPath);
@@ -100,13 +119,24 @@ public class InitGame : MonoBehaviour
         }
         if (GUI.Button(new Rect(150, 0, 100, 100), "delete particle"))
         {
-            PanelManager.GetInstance().ShowPanel("StartPanel", false, () => { Debug.LogError("嘿嘿false"); });
+            if(particleInstanceList.Count>0)
+            {
+                MyParticleInstance particleInstance = particleInstanceList[particleInstanceList.Count - 1];
+                particleInstanceList.RemoveAt(particleInstanceList.Count - 1);
+                MyParticleManager.GetInstance().AddParticleToCache(particleInstance);
+            }
+            else
+            {
+                Debug.LogError("沒啦");
+            }
+          
+            //PanelManager.GetInstance().ShowPanel("StartPanel", false, () => { Debug.LogError("嘿嘿false"); });
             //ParticleManager.GetInstance().AddCache(particle);
         }
 
-        if (GUI.Button(new Rect(300, 0, 100, 100), "clear particle"))
+        //if (GUI.Button(new Rect(300, 0, 100, 100), "clear particle"))
         {
-            PanelManager.GetInstance().DestroyPanel("StartPanel");
+            //PanelManager.GetInstance().DestroyPanel("StartPanel");
             //ParticleManager.GetInstance().ClearAll();
             //ParticleResMgr.GetInstance().ClearAllUseless();
             //Resources.UnloadUnusedAssets();
