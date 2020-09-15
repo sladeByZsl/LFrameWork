@@ -36,6 +36,9 @@ public class InitGame : MonoBehaviour
         {
             Debug.LogError("初始化成功");
             init.Release();
+            //var shaderRequeset = Assets.LoadShader();
+            //yield return shaderRequeset;
+                 
             Init();
         }
         else
@@ -86,7 +89,11 @@ public class InitGame : MonoBehaviour
     {
         
     }
-    
+    private bool IsScene(string asset)
+    {
+        return asset.EndsWith(".unity");
+    }
+
     private void OnGUI()
     {
         if (GUI.Button(new Rect(0,0,100,100),"add particle"))
@@ -95,8 +102,28 @@ public class InitGame : MonoBehaviour
                 Debug.LogError("load ok");
             });
             //PanelManager.GetInstance().ShowPanel("StartPanel", true, () => { Debug.LogError("嘿嘿"); });
-            particleInstanceList.Add(particleInstance);
+            //particleInstanceList.Add(particleInstance);
+            //Scheduler.Delay(3, () => {
+            //    Debug.LogError("嘿嘿");
+            //    MyParticleManager.GetInstance().AddParticleToCache(particleInstance);
+            //});
 
+
+            //List<string> ls = new List<string>();
+            //ls.Add("apple1");
+            //ls.Add("apple2.unity");
+            //ls.Add("apple3");
+            //ls.Add("apple4");
+            //ls.Add("apple5");
+
+            //if(ls.Exists(IsScene)&&!ls.TrueForAll(IsScene))
+            //{
+            //    Debug.LogError("1");
+            //}
+            //else
+            //{
+            //    Debug.LogError("2");
+            //}
             //AssetBundleManifest manifest;
             //string rootPath = "/Users/slade_zhou/Documents/MyProject/LFrameWork/LFrameWork/DataMAC/DataMAC/AssetBundle/AssetBundle";
             //AssetBundle ab = AssetBundle.LoadFromFile(rootPath);

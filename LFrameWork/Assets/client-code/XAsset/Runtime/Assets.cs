@@ -106,10 +106,18 @@ namespace libx
 
             Log(string.Format("Initialize with: runtimeMode={0}\nbasePath：{1}\nupdatePath={2}",runtimeMode, basePath, updatePath));
 
+
+
             //加载manifeset.asset
             var request = new ManifestRequest {url = ManifestAsset};
             AddAssetRequest(request);
             return request;
+        }
+
+        public static AssetRequest LoadShader()
+        {
+            var shader_request = LoadAssetAsync("shaders", typeof(UnityEngine.Object));            AddAssetRequest(shader_request);
+            return shader_request;
         }
 
         public static void Clear()

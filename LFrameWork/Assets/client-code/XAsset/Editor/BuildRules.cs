@@ -66,6 +66,10 @@ namespace libx
 
         [Tooltip("Explicit的名称")] public string assetBundleName;
 
+        /// <summary>
+        /// 根据上述规则，搜索全部文件，会排除掉一些多余的（比如.cs文件）
+        /// </summary>
+        /// <returns></returns>
         public string[] GetAssets()
         {
             var patterns = searchPattern.Split(new[] {','}, StringSplitOptions.RemoveEmptyEntries);
@@ -181,6 +185,12 @@ namespace libx
             return name.Replace("\\", "/").ToLower() + Assets.Extension;
         }
 
+        /// <summary>
+        /// 如果一个asset只被一个object引用，不用拆分；如果被多个object引用，就需要拆分
+        /// 拆分的时候
+        /// </summary>
+        /// <param name="asset"></param>
+        /// <param name="bundle"></param>
         private void Track(string asset, string bundle)
         {
             HashSet<string> assets;

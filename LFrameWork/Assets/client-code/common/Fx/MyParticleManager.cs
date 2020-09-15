@@ -13,17 +13,21 @@ public class MyParticleManager : SingletonBase<MyParticleManager>, IManager
 
     public void Init()
     {
-        if(mTemplete==null)
-        {
-            mTemplete = new GameObject("ParticleInstance");
-            mTemplete.AddComponent<MyParticleInstance>();
-            GameObject.DontDestroyOnLoad(mTemplete);
-        }
         if(root==null)
         {
             root = new GameObject("ParticleRoot");
             rootTrans = root.transform;
             GameObject.DontDestroyOnLoad(root);
+        }
+        if (mTemplete == null)
+        {
+            mTemplete = new GameObject("ParticleTemplete");
+            mTemplete.AddComponent<MyParticleInstance>();
+            mTemplete.transform.parent = rootTrans;
+            mTemplete.transform.localPosition = Vector3.zero;
+            mTemplete.transform.localScale = Vector3.one;
+            mTemplete.SetActive(false);
+            GameObject.DontDestroyOnLoad(mTemplete);
         }
     }
 
@@ -41,9 +45,8 @@ public class MyParticleManager : SingletonBase<MyParticleManager>, IManager
 
     public void AddParticleToCache(MyParticleInstance particleInstance)
     {
-        
-        particleInstance.Clear();
         GameObjectPoolManager.GetInstance().RecycleGameObject(particleInstance.gameObject);
+        particleInstance.Clear();
     }
 
     public void Clear()

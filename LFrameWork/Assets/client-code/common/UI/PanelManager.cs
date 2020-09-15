@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using libx;
 using LFrameWork.Common.Utility;
-
+using UnityEngine.UI;
 public class PanelManager : MonoBehaviourSingle<PanelManager>
 {
     public Camera mUICamera;
@@ -28,6 +28,8 @@ public class PanelManager : MonoBehaviourSingle<PanelManager>
     {
         mUICamera = GameObject.Find("GuiCamera").GetComponent<Camera>();
         panelInfo = new Dictionary<string, GameObject>();
+
+        
     }
 
     private Transform GetUIRoot(int canvas_type)
@@ -82,8 +84,6 @@ public class PanelManager : MonoBehaviourSingle<PanelManager>
                     go.transform.localPosition = Vector3.zero;
                     go.transform.localScale = Vector3.one;
                     request.Require(go);
-                    request.Retain();
-                    request.Release();
 
                     panelInfo[panelName] = go;
                     callBack?.Invoke();
