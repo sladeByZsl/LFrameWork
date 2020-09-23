@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using LFrameWork.Common;
 using UnityEngine;
-using LFrameWork.Common.Resource;
 using libx;
 
 public class InitGame : MonoBehaviour
 {
     [SerializeField] private bool development;
     public Transform root;
-    ParticleInstance particle;
 
     List<MyParticleInstance> particleInstanceList;
 
@@ -96,7 +94,7 @@ public class InitGame : MonoBehaviour
 
     private void OnGUI()
     {
-        if (GUI.Button(new Rect(0,0,100,100),"add particle"))
+        if (GUI.Button(new Rect(0,0,100,150),"add particle"))
         {
             MyParticleInstance particleInstance=MyParticleManager.GetInstance().GetParticleInstance("fx_01_boss_quidola_skill_s_ro", () => {
                 Debug.LogError("load ok");
@@ -144,7 +142,7 @@ public class InitGame : MonoBehaviour
             //    Debug.LogError("haha");
             //});
         }
-        if (GUI.Button(new Rect(150, 0, 100, 100), "delete particle"))
+        if (GUI.Button(new Rect(150, 0, 100, 150), "delete particle"))
         {
             if(particleInstanceList.Count>0)
             {
@@ -161,8 +159,9 @@ public class InitGame : MonoBehaviour
             //ParticleManager.GetInstance().AddCache(particle);
         }
 
-        //if (GUI.Button(new Rect(300, 0, 100, 100), "clear particle"))
+        if (GUI.Button(new Rect(300, 0, 100, 150), "loading"))
         {
+
             //PanelManager.GetInstance().DestroyPanel("StartPanel");
             //ParticleManager.GetInstance().ClearAll();
             //ParticleResMgr.GetInstance().ClearAllUseless();

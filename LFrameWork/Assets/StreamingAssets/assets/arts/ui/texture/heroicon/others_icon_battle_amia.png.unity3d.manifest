@@ -1,17 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3145909394
+CRC: 2951944050
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b4dee4e72fff4e47671b3f96d2a517aa
+    Hash: 83f50327f94b0ffdc26cd978d70c92be
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
 HashAppended: 0
 ClassTypes:
 - Class: 28
-  Script: {instanceID: 0}
-- Class: 213
   Script: {instanceID: 0}
 Assets:
 - Assets/Arts/ui/texture/HeroIcon/others_icon_battle_amia.png

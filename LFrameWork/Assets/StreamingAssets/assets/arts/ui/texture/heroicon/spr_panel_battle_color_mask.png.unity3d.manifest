@@ -1,17 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3547320302
+CRC: 3635663083
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3576fa6e5e86f5825a01ad09278f96f5
+    Hash: b67868eb920d00a1662c0bda8a7ee466
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
 HashAppended: 0
 ClassTypes:
 - Class: 28
-  Script: {instanceID: 0}
-- Class: 213
   Script: {instanceID: 0}
 Assets:
 - Assets/Arts/ui/texture/HeroIcon/spr_panel_battle_color_mask.png

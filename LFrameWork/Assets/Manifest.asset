@@ -21,6 +21,7 @@ MonoBehaviour:
   - Assets/Arts/ui/panel
   - Assets/Arts/ui/texture/Effect
   - Assets/Arts/ui/texture/HeroIcon
+  - Assets/Scenes/level_process
   assets:
   - name: Canvas.prefab
     bundle: 4
@@ -100,249 +101,298 @@ MonoBehaviour:
   - name: heihei.png
     bundle: 7
     dir: 3
+  - name: home.png
+    bundle: 7
+    dir: 3
+  - name: mask1.png
+    bundle: 7
+    dir: 3
+  - name: mask2.png
+    bundle: 7
+    dir: 3
   - name: StartPanel.prefab
     bundle: 8
     dir: 4
-  - name: fx_tex_01_fa_zhen_bing_03.png
+  - name: TestTopMaskScreen.prefab
     bundle: 9
-    dir: 5
-  - name: fx_tex_01_huo_01.png
+    dir: 4
+  - name: fx_tex_01_fa_zhen_bing_03.png
     bundle: 10
     dir: 5
-  - name: fx_tex_01_jian_bian_04.png
+  - name: fx_tex_01_huo_01.png
     bundle: 11
     dir: 5
-  - name: fx_tex_01_jian_bian_09.png
+  - name: fx_tex_01_jian_bian_04.png
     bundle: 12
     dir: 5
-  - name: fx_tex_01_jiao_huan_green_4.png
+  - name: fx_tex_01_jian_bian_09.png
     bundle: 13
     dir: 5
-  - name: fx_tex_01_lie_hen_02.png
+  - name: fx_tex_01_jiao_huan_green_4.png
     bundle: 14
     dir: 5
-  - name: fx_tex_01_lie_hen_03.png
+  - name: fx_tex_01_lie_hen_02.png
     bundle: 15
     dir: 5
-  - name: fx_tex_01_mask_06_2.png
+  - name: fx_tex_01_lie_hen_03.png
     bundle: 16
     dir: 5
-  - name: fx_tex_01_mask_07.png
+  - name: fx_tex_01_mask_06_2.png
     bundle: 17
     dir: 5
-  - name: fx_tex_01_noise_01_2.png
+  - name: fx_tex_01_mask_07.png
     bundle: 18
     dir: 5
-  - name: fx_tex_01_trail_02.png
+  - name: fx_tex_01_noise_01_2.png
     bundle: 19
     dir: 5
-  - name: fx_tex_01_ui_hui_he_attack.png
+  - name: fx_tex_01_trail_02.png
     bundle: 20
     dir: 5
-  - name: fx_tex_01_xuan_wo_05.png
+  - name: fx_tex_01_ui_hui_he_attack.png
     bundle: 21
     dir: 5
-  - name: fx_tex_01_xuan_wo_06.png
+  - name: fx_tex_01_xuan_wo_05.png
     bundle: 22
     dir: 5
-  - name: fx_tex_02_xin_05.png
+  - name: fx_tex_01_xuan_wo_06.png
     bundle: 23
     dir: 5
-  - name: fx_tex_10_daoguang_01.png
+  - name: fx_tex_02_xin_05.png
     bundle: 24
     dir: 5
-  - name: black.png
+  - name: fx_tex_10_daoguang_01.png
     bundle: 25
-    dir: 6
-  - name: others_icon_battle_aldin.png
+    dir: 5
+  - name: black.png
     bundle: 26
     dir: 6
-  - name: others_icon_battle_amia.png
+  - name: others_icon_battle_aldin.png
     bundle: 27
     dir: 6
-  - name: others_icon_battle_archy.png
+  - name: others_icon_battle_amia.png
     bundle: 28
     dir: 6
-  - name: others_icon_battle_arthur_true.png
+  - name: others_icon_battle_archy.png
     bundle: 29
     dir: 6
-  - name: others_icon_battle_arya.png
+  - name: others_icon_battle_arthur_true.png
     bundle: 30
     dir: 6
-  - name: spr_panel_battle_color_mask.png
+  - name: others_icon_battle_arya.png
     bundle: 31
     dir: 6
-  - name: tex_arena_headback1.png
+  - name: spr_panel_battle_color_mask.png
     bundle: 32
     dir: 6
+  - name: tex_arena_headback1.png
+    bundle: 33
+    dir: 6
+  - name: 3Scene.unity
+    bundle: 34
+    dir: 7
+  - name: 4Scene.unity
+    bundle: 35
+    dir: 7
+  - name: GameScene.unity
+    bundle: 36
+    dir: 7
+  - name: SampleScene.unity
+    bundle: 37
+    dir: 7
   bundles:
   - name: assets/arts/effect/prefab/cube.prefab.unity3d
     id: 0
-    deps: 020000000300000021000000
-    len: 2880
-    hash: df5a2ff4a3f48ba11a5b4e9f304b35ef
+    deps: 020000000300000026000000
+    len: 2878
+    hash: 4341d0681d183726bcf7c93bb1bad90d
   - name: assets/arts/effect/prefab/fx_01_boss_quidola_skill_s_ro.prefab.unity3d
     id: 1
-    deps: 020000000300000021000000
-    len: 27149
-    hash: afb04ca69feb9582b2fdf88687c0f058
+    deps: 020000000300000026000000
+    len: 27147
+    hash: d670281af243c8de5d17c68f80d2a502
   - name: assets/arts/effect/res/material/mat_01/fx_mat_01_huo_01.mat.unity3d
     id: 2
-    deps: 0300000021000000
+    deps: 0300000026000000
     len: 2378
-    hash: 4b68f459565729cb5b353ff3f3c2ce08
+    hash: 70a458da5ad10c16919e34117b381fb9
   - name: assets/arts/effect/res/texture/tex_01/fx_tex_01_huo_01.png.unity3d
     id: 3
     deps: 
-    len: 76904
-    hash: d150796ed1639bcb33173d15c69d60d2
+    len: 24346
+    hash: d2a1a70b2c1e0b2c5dca90339ee1ef34
   - name: assets/arts/prefab/canvas.prefab.unity3d
     id: 4
     deps: 
     len: 5392
-    hash: 81b4d49530be49c9973b4752223112df
+    hash: 578f494cb7a5b0a6a7fa575bd33bd8c6
   - name: assets/arts/prefab/guicamera.prefab.unity3d
     id: 5
     deps: 
-    len: 2532
-    hash: eee8a99e8da3a31e3c2488910aa82284
+    len: 2533
+    hash: 8ab6502ab772f75de60d9c6ed77a1688
   - name: assets/arts/ui/common/bag.unity3d
     id: 6
     deps: 
-    len: 209456
-    hash: fb6dd3fc192fd0a231df22486a7d4a02
+    len: 184038
+    hash: bd2f8ddd9f034cd68e939797da06e7da
   - name: assets/arts/ui/common/test.unity3d
     id: 7
     deps: 
-    len: 7337
-    hash: 10c644750cb4c5794a9087897733a7b5
+    len: 11120
+    hash: 54c77dcf335d13bb4b5ace8b7ef7adbd
   - name: assets/arts/ui/panel/startpanel.prefab.unity3d
     id: 8
-    deps: 1a000000
-    len: 198635
-    hash: fae29af2ceab0147a360459aaab789e1
-  - name: assets/arts/ui/texture/effect/fx_tex_01_fa_zhen_bing_03.png.unity3d
+    deps: 1b000000
+    len: 10038
+    hash: 47858acd856880c99cb6c6ae5c6ca1e2
+  - name: assets/arts/ui/panel/testtopmaskscreen.prefab.unity3d
     id: 9
-    deps: 
-    len: 4217
-    hash: 936161c1320b83270077988216b92de8
-  - name: assets/arts/ui/texture/effect/fx_tex_01_huo_01.png.unity3d
+    deps: 07000000
+    len: 5233
+    hash: ab7d4524388a9a3afbfd493c5eb59b60
+  - name: assets/arts/ui/texture/effect/fx_tex_01_fa_zhen_bing_03.png.unity3d
     id: 10
     deps: 
-    len: 25950
-    hash: e6179440324f2ace961c2f03361a5b0c
-  - name: assets/arts/ui/texture/effect/fx_tex_01_jian_bian_04.png.unity3d
+    len: 4015
+    hash: 12776cffc6d40d6c7d3312e1b54fb1e3
+  - name: assets/arts/ui/texture/effect/fx_tex_01_huo_01.png.unity3d
     id: 11
     deps: 
-    len: 3623
-    hash: e27679841af66d8f050b0968cd877d33
-  - name: assets/arts/ui/texture/effect/fx_tex_01_jian_bian_09.png.unity3d
+    len: 23791
+    hash: 590bbe7bf549ea0b62f68260f7106fb8
+  - name: assets/arts/ui/texture/effect/fx_tex_01_jian_bian_04.png.unity3d
     id: 12
     deps: 
-    len: 3726
-    hash: b215cf2550dd028d085762cb07c46b36
-  - name: assets/arts/ui/texture/effect/fx_tex_01_jiao_huan_green_4.png.unity3d
+    len: 3978
+    hash: 3e5085eae3898361993c5ff9889e05dc
+  - name: assets/arts/ui/texture/effect/fx_tex_01_jian_bian_09.png.unity3d
     id: 13
     deps: 
-    len: 12846
-    hash: bd713e1ecb526c7236c4faa42d32f7f0
-  - name: assets/arts/ui/texture/effect/fx_tex_01_lie_hen_02.png.unity3d
+    len: 4014
+    hash: cf7b45e8386e6ca30e7cf05b2bec5fd9
+  - name: assets/arts/ui/texture/effect/fx_tex_01_jiao_huan_green_4.png.unity3d
     id: 14
     deps: 
-    len: 10922
-    hash: 6b005472ebcaa85606c45295bc59e28d
-  - name: assets/arts/ui/texture/effect/fx_tex_01_lie_hen_03.png.unity3d
+    len: 12507
+    hash: 65d6f7ad9f8e798d833d29007edda767
+  - name: assets/arts/ui/texture/effect/fx_tex_01_lie_hen_02.png.unity3d
     id: 15
     deps: 
-    len: 10915
-    hash: 274086119eb9ada0ba7ef851e3fab6e5
-  - name: assets/arts/ui/texture/effect/fx_tex_01_mask_06_2.png.unity3d
+    len: 11176
+    hash: 4fc71a3236645e9406ea2b2fcb6a9442
+  - name: assets/arts/ui/texture/effect/fx_tex_01_lie_hen_03.png.unity3d
     id: 16
     deps: 
-    len: 3936
-    hash: 786c75da8d3358cf8c3acaf18d5bb7c7
-  - name: assets/arts/ui/texture/effect/fx_tex_01_mask_07.png.unity3d
+    len: 11172
+    hash: 8133e5e675e4bdcf29ca098e065cf171
+  - name: assets/arts/ui/texture/effect/fx_tex_01_mask_06_2.png.unity3d
     id: 17
     deps: 
-    len: 4477
-    hash: 8e9b1edfcdc3f165a443a47f474536e0
-  - name: assets/arts/ui/texture/effect/fx_tex_01_noise_01_2.png.unity3d
+    len: 4010
+    hash: 079f1eff3332df9be9b31d4a1dfac394
+  - name: assets/arts/ui/texture/effect/fx_tex_01_mask_07.png.unity3d
     id: 18
     deps: 
-    len: 8620
-    hash: f2b94c049e3e49f059bc65d5ace9c0c2
-  - name: assets/arts/ui/texture/effect/fx_tex_01_trail_02.png.unity3d
+    len: 3846
+    hash: 16d3d8a469896a0a76a03897ba89ecaa
+  - name: assets/arts/ui/texture/effect/fx_tex_01_noise_01_2.png.unity3d
     id: 19
     deps: 
-    len: 9067
-    hash: b54dd784661997146c91cbc471ea326a
-  - name: assets/arts/ui/texture/effect/fx_tex_01_ui_hui_he_attack.png.unity3d
+    len: 9432
+    hash: 7ccc7c826b0615aa08d6954a44060657
+  - name: assets/arts/ui/texture/effect/fx_tex_01_trail_02.png.unity3d
     id: 20
     deps: 
-    len: 5394
-    hash: 01e52ea7743cb2fe79f83e233de98580
-  - name: assets/arts/ui/texture/effect/fx_tex_01_xuan_wo_05.png.unity3d
+    len: 8966
+    hash: 0052eba9bfedafe9181b8d0f6b6cabb8
+  - name: assets/arts/ui/texture/effect/fx_tex_01_ui_hui_he_attack.png.unity3d
     id: 21
     deps: 
-    len: 38456
-    hash: 0878286ced100794e1e037a7921111eb
-  - name: assets/arts/ui/texture/effect/fx_tex_01_xuan_wo_06.png.unity3d
+    len: 5606
+    hash: 353e02f457936af3ef322ec35f8217c7
+  - name: assets/arts/ui/texture/effect/fx_tex_01_xuan_wo_05.png.unity3d
     id: 22
     deps: 
-    len: 17794
-    hash: d1b0e281c6e8f6178256c1bc233d5b8f
-  - name: assets/arts/ui/texture/effect/fx_tex_02_xin_05.png.unity3d
+    len: 35874
+    hash: 440ce62b096966c2e6d418e82ce1352f
+  - name: assets/arts/ui/texture/effect/fx_tex_01_xuan_wo_06.png.unity3d
     id: 23
     deps: 
-    len: 16801
-    hash: ab2b5e40b045f9655bb7f0de911c8152
-  - name: assets/arts/ui/texture/effect/fx_tex_10_daoguang_01.png.unity3d
+    len: 15215
+    hash: bd89490b3424546fa5c806151f965fb1
+  - name: assets/arts/ui/texture/effect/fx_tex_02_xin_05.png.unity3d
     id: 24
     deps: 
-    len: 40141
-    hash: 7c9403fb163af9446c8c2168eea3def2
-  - name: assets/arts/ui/texture/heroicon/black.png.unity3d
+    len: 16183
+    hash: 1123603efc54a28ec7c2e290c11d7b73
+  - name: assets/arts/ui/texture/effect/fx_tex_10_daoguang_01.png.unity3d
     id: 25
     deps: 
-    len: 2919
-    hash: 6a7a3131882ea9392f10d5ad03639342
-  - name: assets/arts/ui/texture/heroicon/others_icon_battle_aldin.png.unity3d
+    len: 30799
+    hash: 1b3cd4dcfac8fd05b7da57b3133f19e1
+  - name: assets/arts/ui/texture/heroicon/black.png.unity3d
     id: 26
     deps: 
-    len: 187926
-    hash: 544b4dd127168355c1e448292e3f34a7
-  - name: assets/arts/ui/texture/heroicon/others_icon_battle_amia.png.unity3d
+    len: 2970
+    hash: 716da5d852ca45e38b45c77b4ff8ae87
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_aldin.png.unity3d
     id: 27
     deps: 
-    len: 156949
-    hash: bea09f964e5c5ed0dac7d9b5a17d8977
-  - name: assets/arts/ui/texture/heroicon/others_icon_battle_archy.png.unity3d
+    len: 35820
+    hash: 6547ddca44bcab32c9b4700794a18bae
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_amia.png.unity3d
     id: 28
     deps: 
-    len: 156267
-    hash: b299a4d8d5c7868433a61f9be3bcf6a7
-  - name: assets/arts/ui/texture/heroicon/others_icon_battle_arthur_true.png.unity3d
+    len: 34698
+    hash: 83f50327f94b0ffdc26cd978d70c92be
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_archy.png.unity3d
     id: 29
     deps: 
-    len: 152459
-    hash: 978a4316c61eee0c04eff77fb37d3712
-  - name: assets/arts/ui/texture/heroicon/others_icon_battle_arya.png.unity3d
+    len: 31467
+    hash: f377157135006236aac69264a58d9243
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_arthur_true.png.unity3d
     id: 30
     deps: 
-    len: 186321
-    hash: 23562547b443bfe851316a145d5a9e02
-  - name: assets/arts/ui/texture/heroicon/spr_panel_battle_color_mask.png.unity3d
+    len: 31088
+    hash: bdb50ef8c40ac5d0c7f9971774739be1
+  - name: assets/arts/ui/texture/heroicon/others_icon_battle_arya.png.unity3d
     id: 31
     deps: 
-    len: 6708
-    hash: ea92e28932e98bd4342e8679c7f143b6
-  - name: assets/arts/ui/texture/heroicon/tex_arena_headback1.png.unity3d
+    len: 37194
+    hash: 7e603defe05093e28414d4a5068c7d9c
+  - name: assets/arts/ui/texture/heroicon/spr_panel_battle_color_mask.png.unity3d
     id: 32
     deps: 
-    len: 4823
-    hash: 5b3ca0e477f86639146cda0e613148a5
-  - name: shaders.unity3d
+    len: 4365
+    hash: b67868eb920d00a1662c0bda8a7ee466
+  - name: assets/arts/ui/texture/heroicon/tex_arena_headback1.png.unity3d
     id: 33
     deps: 
-    len: 11322
-    hash: c2a84566207b0a9787d5bcc14286c609
+    len: 2914
+    hash: 23b34a4396b0a7a89c61e984692a0158
+  - name: assets/scenes/level_process/3scene.unity.unity3d
+    id: 34
+    deps: 
+    len: 39790
+    hash: 541cc3735f3502c12e4a184665f20251
+  - name: assets/scenes/level_process/4scene.unity.unity3d
+    id: 35
+    deps: 
+    len: 123601
+    hash: 66741d80d208d8101add329d37ce63d5
+  - name: assets/scenes/level_process/gamescene.unity.unity3d
+    id: 36
+    deps: 
+    len: 106067
+    hash: 60d8c8fa67c7c75e334f56e7f3eff569
+  - name: assets/scenes/level_process/samplescene.unity.unity3d
+    id: 37
+    deps: 0400000005000000
+    len: 43309
+    hash: fe456d732ae46e0c036a36db863cc3e8
+  - name: shaders.unity3d
+    id: 38
+    deps: 
+    len: 11543
+    hash: f1fddace56e3aa9e83cbae88ea85aefb

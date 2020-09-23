@@ -62,6 +62,8 @@ namespace libx
                 var asset = assets[index]; 
                 scenes[index] = new EditorBuildSettingsScene(asset, true);
             }
+            
+            Debug.LogError("scenes:"+ Util.GetListObjectString(new List<EditorBuildSettingsScene>(scenes)));
             EditorBuildSettings.scenes = scenes;
         }
 

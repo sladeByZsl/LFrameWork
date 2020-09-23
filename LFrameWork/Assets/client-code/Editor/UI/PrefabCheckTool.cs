@@ -155,14 +155,7 @@ public class PrefabCheckTool
 		}
 
 		List<string> errorList = new List<string>();
-		FxSetting fxSetting = instance.GetComponent<FxSetting>();
-		if ( fxSetting == null )
-		{
-			//errorList.Add("没有挂载设置FxSetting脚本;");
-        }
-
-
-
+		
         bool hasSave = ReplacePrefab(instance, prefabPath);
         if (errorList.Count > 0)
 		{

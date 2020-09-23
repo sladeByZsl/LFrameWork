@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2763009298
+CRC: 625397387
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3a0f15b27caae2d6c58e3a3ddb1cf82c
+    Hash: 54c77dcf335d13bb4b5ace8b7ef7adbd
   TypeTreeHash:
     serializedVersion: 2
     Hash: ea5a42e0fd8ea905efa7aa926a3b8944
@@ -14,5 +14,8 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
+- Assets/Arts/ui/common/test/home.png
+- Assets/Arts/ui/common/test/mask1.png
 - Assets/Arts/ui/common/test/heihei.png
+- Assets/Arts/ui/common/test/mask2.png
 Dependencies: []

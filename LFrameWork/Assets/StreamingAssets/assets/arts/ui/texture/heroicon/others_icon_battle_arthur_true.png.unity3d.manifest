@@ -1,17 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1039406275
+CRC: 2067179688
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 86f3f49bc156aa612d8997c8e746308e
+    Hash: bdb50ef8c40ac5d0c7f9971774739be1
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
 HashAppended: 0
 ClassTypes:
 - Class: 28
-  Script: {instanceID: 0}
-- Class: 213
   Script: {instanceID: 0}
 Assets:
 - Assets/Arts/ui/texture/HeroIcon/others_icon_battle_arthur_true.png
