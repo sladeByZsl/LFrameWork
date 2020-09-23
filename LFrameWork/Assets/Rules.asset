@@ -47,10 +47,6 @@ MonoBehaviour:
     searchPattern: '*.png'
     nameBy: 1
     assetBundleName: 
-  - searchPath: Assets/Scenes/level_process
-    searchPattern: '*.unity'
-    nameBy: 1
-    assetBundleName: 
   ruleAssets:
   - bundle: assets/arts/prefab/canvas.prefab.unity3d
     path: Assets/Arts/Prefab/Canvas.prefab

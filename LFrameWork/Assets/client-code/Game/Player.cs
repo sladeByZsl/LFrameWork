@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/*
+ https://zhuanlan.zhihu.com/p/42781261
+ 
+     
+     
+ */
 public class Player : MonoBehaviour
 {
     public static Player Instance = null;
@@ -80,16 +85,18 @@ public class Player : MonoBehaviour
 
         Vector4 projdir = mLight.transform.forward;
 
+        Vector4 _LightDir = new Vector4(projdir.x, projdir.y, projdir.z,0.1f);
+
         foreach (var mat in mMatList)
         {
             if (mat == null)
                 continue;
-
-            mat.SetVector("_WorldPos", worldpos);
-            mat.SetVector("_ShadowProjDir", projdir);
-            mat.SetVector("_ShadowPlane", new Vector4(0.0f, 1.0f, 0.0f, 0.1f));
-            mat.SetVector("_ShadowFadeParams", new Vector4(0.0f, 1.5f, 0.7f, 0.0f));
-            mat.SetFloat("_ShadowFalloff", 1.35f);
+            mat.SetVector("_LightDir", _LightDir);
+            //mat.SetVector("_WorldPos", worldpos);
+            //mat.SetVector("_ShadowProjDir", projdir);
+            //mat.SetVector("_ShadowPlane", new Vector4(0.0f, 1.0f, 0.0f, 0.1f));
+            //mat.SetVector("_ShadowFadeParams", new Vector4(0.0f, 1.5f, 0.7f, 0.0f));
+            //mat.SetFloat("_ShadowFalloff", 1.35f);
         }
     }
 
