@@ -6,7 +6,7 @@ Shader "PlanarShadow/Player"
 	{
 		_MainTex ("Texture", 2D) = "white" {}
 		_ShadowColor("ShadowColor",Color) = (1,1,1,1)
-		_ShadowFalloff ("ShadowFalloff", float) = 0.35
+		_ShadowFalloff ("ShadowFalloff", float) = 1.35
 	}
 	
 	SubShader
@@ -134,6 +134,14 @@ Shader "PlanarShadow/Player"
 				//转换到裁切空间
 				o.vertex = UnityWorldToClipPos(shadowPos);
 
+
+				/*
+				Unity Shader中获取模型中心点世界坐标的几种写法
+				float3 center = float3(unity_ObjectToWorld[0].w, unity_ObjectToWorld[1].w, unity_ObjectToWorld[2].w);
+				float3 center = float3(unity_ObjectToWorld._m03, unity_ObjectToWorld._m13, unity_ObjectToWorld._m23);
+				float3 center = mul(unity_ObjectToWorld , float(0,0,0,1)).xyz;
+				float3 center = unity_ObjectToWorld._14_24_34;
+				*/
 				//得到中心点世界坐标
 				float3 center = float3(unity_ObjectToWorld[0].w, _LightDir.w, unity_ObjectToWorld[2].w);
 				//计算阴影衰减
@@ -141,7 +149,7 @@ Shader "PlanarShadow/Player"
 
 				//阴影颜色
 				o.color = _ShadowColor;
-				o.color.a *= _ShadowFalloff;
+				o.color.a *= falloff;
 
 				return o;
 			}
