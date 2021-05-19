@@ -4,16 +4,16 @@
 
     public class CNDate
     {
+        public int cnIntYear;
+        public int cnIntMonth;
+        public int cnIntDay;
+        public string cnStrYear = "";
+        public string cnStrMonth = "";
+        public string cnStrDay = "";
         public string cnAnm = "";
+        public string cnSolarTerm = "";
         public string cnFtvl = "";
         public string cnFtvs = "";
-        public int cnIntDay;
-        public int cnIntMonth;
-        public int cnIntYear;
-        public string cnSolarTerm = "";
-        public string cnStrDay = "";
-        public string cnStrMonth = "";
-        public string cnStrYear = "";
     }
 }
 
