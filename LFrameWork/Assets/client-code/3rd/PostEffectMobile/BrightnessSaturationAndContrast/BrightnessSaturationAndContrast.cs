@@ -19,14 +19,6 @@ public class BrightnessSaturationAndContrast : PostEffectsBase
     //对比度
     [Range(0.0f, 3.0f)]
     public float contrast = 1.0f;
-    public Material material
-    {
-        get
-        {
-            briSatConMaterial = CheckShaderAndCreateMaterial(briSatConShader, briSatConMaterial);
-            return briSatConMaterial;
-        }
-    }
     
     private void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
